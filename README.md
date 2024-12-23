@@ -3,6 +3,7 @@
 A simple Todo application with a Node.js backend and a JavaScript frontend. This project allows users to create, read, update, and delete todos.
 
 ---
+```bash
 TODO-APP/
 │
 ├── cypress/                   # Cypress test-related files
