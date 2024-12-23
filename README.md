@@ -27,7 +27,8 @@ TODO-APP/
 ├── package.json               # Project metadata and dependencies
 ├── server.js                  # Backend server setup
 └── todos.json                 # JSON file acting as the database
-
+```
+---
 
 ## Features
 
