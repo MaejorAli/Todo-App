@@ -4,8 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
+    "test:coverage": "npx nyc mocha  test/api.test.js",
     "start": "node server.js",
-    "test-e2e": "npx cypress run"
+    "test-e2e": "npx cypress run",
+    "test-e2e:coverage": "npx nyc --reporter=text-summary --reporter=lcov npx cypress run"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +19,21 @@
     "fs": "^0.0.1-security"
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^3.13.9",
     "chai": "^4.3.7",
     "cypress": "^13.17.0",
     "mocha": "^11.0.1",
+    "nyc": "^17.1.0",
     "supertest": "^7.0.0"
+  },
+  "nyc": {
+    "reporter": [
+      "html",
+      "text",
+      "lcov"
+    ],
+    "exclude": [
+      "test/"
+    ]
   }
 }

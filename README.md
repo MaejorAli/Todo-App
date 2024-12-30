@@ -97,6 +97,10 @@ TODO-APP/
 Install API Testing Dependencies:
 - npm run test
 
+Test coverage
+- npm run test:coverage
+- open coverage/index.html  to view coverage in browser
+
 Using Postman:
 
 Import the API collection into Postman.
@@ -115,4 +119,9 @@ Execute requests (GET, POST, PUT, DELETE) with the required payloads.
 2. Run in Cypress GUI:
 
 - npx cypress open
+
+3. Test coverage
+
+- npm run test-e2e:coverage
+- open coverage/lcov-report/index.html   to view coverage in browser
 
